@@ -1,0 +1,43 @@
+*::before, *::after, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Minion Pro Regular;
+  src: url(../assets/font/MinionPro-Regular.woff);
+}
+
+body {
+  background-color: #111111;
+  color: #E8E8E8;
+  font-family: Minion Pro Regular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: #F3ECDB;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
