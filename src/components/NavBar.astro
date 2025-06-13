@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+---
+
+<nav>
+  <div class="logo">
+    <a href="/"><img src="/public/images/navlogo.webp" alt="Great Seal Studios Logo" class="logo-img"></a>
+  </div>
+  <div class="nav">
+    <ul class="nav-links">
+      <li class="nav-item"><a href="/introduction-to-venar" class="nav-link">Introduction to Venar</a></li>
+      <li class="nav-item"><a href="/team" class="nav-link">Team</a></li>
+      <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  nav {
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 3rem;
+    z-index: 20;
+  }
+
+  .logo-img {
+    height: 3.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+
+</style>

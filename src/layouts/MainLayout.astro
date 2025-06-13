@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import NavBar from "../components/NavBar.astro";
 ---
 
 <!DOCTYPE html>
@@ -10,7 +11,58 @@ import "../styles/global.css";
   <title>Great Seal Studios</title>
 </head>
 <body>
+  <NavBar></NavBar>
   <slot></slot>
+  <hr class="separator">
+  <footer>
+    <div class="footer-container">
+      <div class="footer-socials">
+			  <a href="https://twitter.com/GreatSealStudio"><img src="/public/images/twitter.svg" alt="Twitter" class="social-btn"></a>
+			  <a href="https://bsky.app/profile/greatsealstudios.bsky.social"><img src="/public/images/bluesky.svg" alt="Bluesky" class="social-btn"></a>
+			  <a href="https://instagram.com/greatsealstudio"><img src="/public/images/instagram.svg" alt="Instagram" class="social-btn"></a>
+			  <a href="https://greatsealstudios.tumblr.com"><img src="/public/images/tumblr.svg" alt="Tumblr" class="social-btn"></a>
+		</div>
+		<div class="footer-copy">
+			<p class="footer-text">
+				Great Seal Studios © 2025 
+			</p>
+			<a href="/privacy-policy" class="footer-text footer-link">Privacy Policy</a>
+		</div>
+    </div>
+		
+	</footer>
 </body>
 </html>
 
+
+<style>
+
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .social-btn {
+    width: 1.2rem;
+  }
+
+  .footer-copy{
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    color: #ABABAB;
+  }
+
+</style>
