@@ -43,15 +43,15 @@ import MainLayout from "../layouts/MainLayout.astro"
 		</section>
 		<section class="manifesto">
 			<div class="container">
-				<h2 class="title">Great Seal Manifesto</h2>
-				<p class="subtitle">No great experience without a healthy creating process.</p>
-					<p class="text">This means our creative team works closely together, sharing ideas, working towards the same goal: to produce a world worth living in and stories that stay with players for a very long time. We tend to take our time both for the sake of our games and for the well-being of our team members. We, too, need to have fun during the development stages – otherwise it all falls apart.</p>
-				<p class="subtitle">Knowledge-sharing through visual storytelling.</p>
-				<p class="text">The world of Great Seal was developed as a hobby project of a graduate student testing their knowledge they had gained throughout their years of academia with the sole desire to share them through a single medium: video games. This humble beginning is still very much prevalent. Our goal is to move beyond higher education’s ivory tower and share theories, concepts & ideas, which are often buried under academic jargon. We want to center the untold, the unknown, and a lot of what ifs through conscious storytelling and worldbuilding.</p>
-				<p class="subtitle">Vision not for sale.</p>
-				<p class="text">The greed of higher-ups and incompetence of executives have long been a plague in any industry that relies on the work of artists and creatives. Staying independent is the only way to avoid having our ideas sold out for the highest bidder and getting slaps on our wrists every time we dare to think outside the box. Nothing really blooms in cages. Of course, this decision will highly influence our speed and finances – a reality that we have made peace with and prepared for.</p>
-				<p class="subtitle">Respect for our community.</p>
-				<p class="text">Without them, there is no way to bring our stories to life; they are among the essential cornerstones upon which this studio is built. We understand that every penny matters in this current economy; hence, we will not be asking our fellow gamers to purchase countless expansions in order to receive a full experience. To ensure that people get what they pay for, we aim to create rich tales within fantastical worlds for folks to immerse themselves in, while also staying true to our creative vision. In addition, we wish to build and nurture a healthy community with a strong sense of belonging. This community shall be ever-present: the world of Great Seal does not cease to exist once players hit “Exit Game.”</p>
+				<h2 class="title fade-in">Great Seal Manifesto</h2>
+				<p class="subtitle fade-in">No great experience without a healthy creating process.</p>
+					<p class="text fade-in">This means our creative team works closely together, sharing ideas, working towards the same goal: to produce a world worth living in and stories that stay with players for a very long time. We tend to take our time both for the sake of our games and for the well-being of our team members. We, too, need to have fun during the development stages – otherwise it all falls apart.</p>
+				<p class="subtitle fade-in">Knowledge-sharing through visual storytelling.</p>
+				<p class="text fade-in">The world of Great Seal was developed as a hobby project of a graduate student testing their knowledge they had gained throughout their years of academia with the sole desire to share them through a single medium: video games. This humble beginning is still very much prevalent. Our goal is to move beyond higher education’s ivory tower and share theories, concepts & ideas, which are often buried under academic jargon. We want to center the untold, the unknown, and a lot of what ifs through conscious storytelling and worldbuilding.</p>
+				<p class="subtitle fade-in">Vision not for sale.</p>
+				<p class="text fade-in">The greed of higher-ups and incompetence of executives have long been a plague in any industry that relies on the work of artists and creatives. Staying independent is the only way to avoid having our ideas sold out for the highest bidder and getting slaps on our wrists every time we dare to think outside the box. Nothing really blooms in cages. Of course, this decision will highly influence our speed and finances – a reality that we have made peace with and prepared for.</p>
+				<p class="subtitle fade-in">Respect for our community.</p>
+				<p class="text fade-in">Without them, there is no way to bring our stories to life; they are among the essential cornerstones upon which this studio is built. We understand that every penny matters in this current economy; hence, we will not be asking our fellow gamers to purchase countless expansions in order to receive a full experience. To ensure that people get what they pay for, we aim to create rich tales within fantastical worlds for folks to immerse themselves in, while also staying true to our creative vision. In addition, we wish to build and nurture a healthy community with a strong sense of belonging. This community shall be ever-present: the world of Great Seal does not cease to exist once players hit “Exit Game.”</p>
 			</div>
 		</section>
 	</main>
@@ -237,34 +237,11 @@ import MainLayout from "../layouts/MainLayout.astro"
 		cursor: pointer;
 	}
 
-	/*** ANIMATIONS ****/
-
-	@keyframes fadeInUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
 
 </style>
 
 <script>
+
   // Slideshow variables
 	let slides;
   let indicators;
