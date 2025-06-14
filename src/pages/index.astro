@@ -175,6 +175,12 @@ import MainLayout from "../layouts/MainLayout.astro"
 
 	/*** CONTENT SECTION ****/
 
+	.title, .subtitle, .text {
+		animation: fade linear;
+		animation-timeline: view();
+		animation-range: entry 0 cover 40%;
+	}
+
 	.title {
 		text-align: center;
 		padding-bottom: 6rem;
